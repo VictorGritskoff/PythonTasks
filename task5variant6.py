@@ -65,7 +65,12 @@ while True:
         product = input("Введите название товара: ")
         if product == "n":
             break
-        quantity = int(input("Введите количество: "))
+        while True:
+            try:
+                quantity = int(input("Введите количество: "))
+                break
+            except ValueError:
+                print("Проверьте свой ввод!")
         buy_product(product, quantity)
     elif choice == "5":
         break

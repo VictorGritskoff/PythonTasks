@@ -11,6 +11,7 @@ def is_ordered(num):
         return True
     else:
         return False
+
     if not digits:
         return False
 
