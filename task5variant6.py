@@ -36,20 +36,26 @@ def buy_product(product, quantity):
         if quantity <= products[product][1]:
             price = products[product][0] * quantity
             products[product][1] -= quantity
+            print("\n\n")
             print(f"Вы купили {quantity} шт. товара '{product}' за {price} руб.")
             print(f"Осталось {products[product][1]} шт.")
+            print("\n\n")
         else:
             print("Недостаточно товара на складе")
+            print("\n\n")
     else:
         print("Товар не найден")
+        print("\n\n")
 
 # Главный цикл программы
 while True:
+    print("\n\n")
     print("1. Просмотр цены")
     print("2. Просмотр количества")
     print("3. Вся информация")
     print("4. Покупка")
     print("5. До свидания")
+    print("\n\n")
 
     choice = input("Выберите пункт меню: ")
 
