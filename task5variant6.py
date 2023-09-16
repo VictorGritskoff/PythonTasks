@@ -12,8 +12,10 @@ def view_price(product):
     if product in products:
         price = products[product][0]
         print(f"{product}: {price} руб.")
+        print("\n\n")
     else:
         print("Товар не найден")
+        print("\n\n")
 
 # Функция для просмотра количества товара
 def view_quantity(product):
